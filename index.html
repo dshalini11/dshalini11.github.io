@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shalini Das | Data Analyst & Analytics Specialist</title>
+  <meta name="description" content="Portfolio of Shalini Das - Data Analyst & CS Graduate skilled in Python, SQL, Tableau, Power BI, Data Cleaning, and Machine Learning." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Chart.js for Data Visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Data Grid & Particles Overlay -->
+  <div class="bg-grid-overlay"></div>
+  <div class="glow-sphere glow-sphere-1"></div>
+  <div class="glow-sphere glow-sphere-2"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-accent">&lt;SD/&gt;</span> Shalini Das
+        <span class="role-pill"><i class="fa-solid fa-chart-line"></i> Data Analyst</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link active"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#sandbox" class="nav-link"><i class="fa-solid fa-flask"></i> Data Sandbox</a></li>
+        <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li><a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+        <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+        <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline btn-sm" id="btn-open-resume">
+          <i class="fa-solid fa-file-pdf"></i> Resume
+        </button>
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span> Available for Data Analyst & Analytics Roles
+        </div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-gradient">Shalini Das</span>
+        </h1>
+
+        <div class="typing-container">
+          <span class="typing-prefix">Specialized in: </span>
+          <span class="typing-text" id="typing-element"></span>
+          <span class="cursor">|</span>
+        </div>
+
+        <p class="hero-description">
+          Final-year <strong>B.Tech Computer Science</strong> student at KIIT University with a proven track record in 
+          <strong>SQL data processing</strong>, <strong>exploratory data analysis (EDA)</strong>, <strong>Python analytics</strong>, 
+          and <strong>interactive BI dashboarding</strong>. Passionate about uncovering actionable business insights from raw data.
+        </p>
+
+        <div class="hero-tags">
+          <span class="tech-tag"><i class="fa-solid fa-database"></i> SQL (Queries & DBMS)</span>
+          <span class="tech-tag"><i class="fa-brands fa-python"></i> Python (Pandas/NumPy)</span>
+          <span class="tech-tag"><i class="fa-solid fa-chart-column"></i> Excel & Pivot Tables</span>
+          <span class="tech-tag"><i class="fa-solid fa-chart-pie"></i> Power BI / Tableau</span>
+          <span class="tech-tag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+        </div>
+
+        <div class="location-badge">
+          <i class="fa-solid fa-location-dot"></i> Bhubaneswar, Odisha, India &bull; 
+          <span class="relocate-highlight"><i class="fa-solid fa-plane-departure"></i> Open to Relocation</span>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#sandbox" class="btn btn-primary">
+            <i class="fa-solid fa-chart-simple"></i> Launch Data Sandbox
+          </a>
+          <button class="btn btn-secondary" id="hero-resume-btn">
+            <i class="fa-solid fa-download"></i> Get Resume (PDF)
+          </button>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="profile-card">
+          <div class="profile-image-container">
+            <img src="profile.jpg" alt="Shalini Das - Data Analyst" class="profile-img" />
+            <div class="profile-glow"></div>
+            <div class="experience-badge">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <strong>Top 5% Scholar</strong>
+                <span>Study in India Scholarship</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-analytics-mini">
+            <div class="mini-stat">
+              <span class="stat-number">98.5%</span>
+              <span class="stat-label">Model Accuracy</span>
+            </div>
+            <div class="mini-stat-divider"></div>
+            <div class="mini-stat">
+              <span class="stat-number">10k+</span>
+              <span class="stat-label">Applicants Top Scholar</span>
+            </div>
+            <div class="mini-stat-divider"></div>
+            <div class="mini-stat">
+              <span class="stat-number">SQL & Python</span>
+              <span class="stat-label">Core Stack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Ribbon -->
+  <section class="metrics-ribbon" id="about">
+    <div class="container ribbon-grid">
+      <div class="ribbon-card">
+        <div class="ribbon-icon"><i class="fa-solid fa-bullseye"></i></div>
+        <div class="ribbon-text">
+          <h3>98.5% Accuracy</h3>
+          <p>Attention U-Net Brain Tumor Segmentation</p>
+        </div>
+      </div>
+      <div class="ribbon-card">
+        <div class="ribbon-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="ribbon-text">
+          <h3>Top 5% Scholar</h3>
+          <p>Study in India Full-Tuition Scholarship</p>
+        </div>
+      </div>
+      <div class="ribbon-card">
+        <div class="ribbon-icon"><i class="fa-solid fa-filter"></i></div>
+        <div class="ribbon-text">
+          <h3>SQL & Data Wrangling</h3>
+          <p>Field Survey & Clean Dataset Transformation</p>
+        </div>
+      </div>
+      <div class="ribbon-card">
+        <div class="ribbon-icon"><i class="fa-solid fa-cubes"></i></div>
+        <div class="ribbon-text">
+          <h3>Multi-Stack Analytics</h3>
+          <p>Python, Streamlit, Groq LLM, Flask & Power BI</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Data Analytics Sandbox -->
+  <section class="section sandbox-section" id="sandbox">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-terminal"></i> Interactive Feature</span>
+        <h2 class="section-title">Data Analyst <span class="text-gradient">Interactive Sandbox</span></h2>
+        <p class="section-description">
+          Explore live analytics simulations created from Shalini's real-world projects. Toggle between datasets to inspect interactive charts, data pipelines, and SQL code logic.
+        </p>
+      </div>
+
+      <div class="sandbox-container">
+        <!-- Sandbox Control Header -->
+        <div class="sandbox-tabs">
+          <button class="sandbox-tab active" data-dataset="market">
+            <i class="fa-solid fa-chart-line"></i> Market Analysis Dashboard
+          </button>
+          <button class="sandbox-tab" data-dataset="ngo">
+            <i class="fa-solid fa-list-check"></i> NGO Field Survey SQL Analytics
+          </button>
+          <button class="sandbox-tab" data-dataset="mri">
+            <i class="fa-solid fa-brain"></i> MRI Brain Tumor ML Accuracy
+          </button>
+        </div>
+
+        <div class="sandbox-body">
+          <!-- Left: Chart & Visuals -->
+          <div class="sandbox-chart-box">
+            <div class="chart-header">
+              <div class="chart-title-group">
+                <h4 id="sandbox-chart-title">Real-Time Stock Trend & Indicators</h4>
+                <span class="live-tag" id="sandbox-status-tag"><i class="fa-solid fa-circle"></i> Live Simulation</span>
+              </div>
+              <div class="chart-controls">
+                <button class="chart-btn" id="btn-refresh-data" title="Refresh Live Simulation">
+                  <i class="fa-solid fa-rotate"></i> Refresh
+                </button>
+              </div>
+            </div>
+            
+            <div class="chart-canvas-wrapper">
+              <canvas id="sandboxChart"></canvas>
+            </div>
+
+            <!-- Dynamic KPI Callouts -->
+            <div class="sandbox-kpis" id="sandbox-kpi-container">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Right: Code Inspector & Pipeline Insights -->
+          <div class="sandbox-code-box">
+            <div class="code-box-header">
+              <span class="code-tab-title"><i class="fa-solid fa-code"></i> Data Pipeline & SQL Logic</span>
+              <button class="copy-code-btn" id="btn-copy-sql"><i class="fa-regular fa-copy"></i> Copy</button>
+            </div>
+            
+            <pre class="code-snippet-view"><code id="sandbox-code-content">-- SQL / Python Transformation Code --</code></pre>
+
+            <div class="insights-card">
+              <h5><i class="fa-solid fa-lightbulb"></i> Business & Analytics Impact</h5>
+              <p id="sandbox-impact-text">
+                Loading project analytics insights...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Analytics Competencies -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-layer-group"></i> Technical Matrix</span>
+        <h2 class="section-title">Skills & <span class="text-gradient">Analytics Stack</span></h2>
+        <p class="section-description">
+          A balance of strong database querying, exploratory data analysis, business visualization, and software engineering fundamentals.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Radar Chart Card -->
+        <div class="skills-card radar-card">
+          <div class="card-header">
+            <h3><i class="fa-solid fa-chart-radar"></i> Analytics Competency Radar</h3>
+            <span class="badge-mini">Interactive</span>
+          </div>
+          <div class="radar-wrapper">
+            <canvas id="skillsRadar"></canvas>
+          </div>
+        </div>
+
+        <!-- Skills Accordion / Category Cards -->
+        <div class="skills-categories">
+          
+          <!-- Category 1: Data & Analytics -->
+          <div class="skill-group-card">
+            <div class="group-header">
+              <i class="fa-solid fa-chart-pie group-icon"></i>
+              <h4>Data & Analytics Core</h4>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill">
+                <span class="skill-name">SQL (PostgreSQL / MySQL)</span>
+                <span class="skill-level">Advanced (Joins, CTEs, Aggregations)</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Python (Pandas, NumPy)</span>
+                <span class="skill-level">Proficient</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Excel (Pivot Tables, VLOOKUP)</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Tableau & Power BI</span>
+                <span class="skill-level">Dashboarding</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">EDA & Data Cleaning</span>
+                <span class="skill-level">End-to-End</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Machine Learning & AI -->
+          <div class="skill-group-card">
+            <div class="group-header">
+              <i class="fa-solid fa-brain group-icon"></i>
+              <h4>Machine Learning & Modeling</h4>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill">
+                <span class="skill-name">Data Preprocessing</span>
+                <span class="skill-level">Scaling, Normalization, Imputation</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">TensorFlow & Keras</span>
+                <span class="skill-level">Attention U-Net, Deep Learning</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Scikit-learn</span>
+                <span class="skill-level">Model Evaluation, IoU, Dice Score</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">LLM Integration</span>
+                <span class="skill-level">Groq LLM API, Gemini API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools, Web & Platforms -->
+          <div class="skill-group-card">
+            <div class="group-header">
+              <i class="fa-solid fa-screwdriver-wrench group-icon"></i>
+              <h4>Tools, Web & Core CS</h4>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-level">Version Control</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Streamlit & Flask</span>
+                <span class="skill-level">Python Web Apps</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">C & Python Programming</span>
+                <span class="skill-level">CS Fundamentals</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">DBMS, SDLC, System Design</span>
+                <span class="skill-level">Core CS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Soft Skills & Execution -->
+          <div class="skill-group-card">
+            <div class="group-header">
+              <i class="fa-solid fa-people-group group-icon"></i>
+              <h4>Analytical Soft Skills</h4>
+            </div>
+            <div class="skill-pills">
+              <div class="skill-pill">
+                <span class="skill-name">Analytical Problem Solving</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Data Storytelling & Presentation</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Team Collaboration & Client Interaction</span>
+              </div>
+              <div class="skill-pill">
+                <span class="skill-name">Cross-Functional Communication</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Showcase -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-folder-open"></i> Portfolio Work</span>
+        <h2 class="section-title">Featured <span class="text-gradient">Data & AI Projects</span></h2>
+        <p class="section-description">
+          Real-world data projects demonstrating full pipeline execution—from raw data ingestion, cleaning, and model evaluation to interactive web dashboards.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="analytics">Data Analytics & AI</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="web">Full-Stack & Tools</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Market Analysis Dashboard -->
+        <div class="project-card" data-category="analytics">
+          <div class="project-banner project-banner-1">
+            <div class="project-type-tag"><i class="fa-solid fa-chart-line"></i> Analytics & AI</div>
+            <div class="project-icon-overlay"><i class="fa-solid fa-arrow-trend-up"></i></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Market Analysis Dashboard</h3>
+            <p class="project-desc">
+              Built a real-time market analysis dashboard tracking stock data with live price updates, technical indicators (RSI, MA), and AI-powered trend forecasts using LLMs (Groq).
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Streamlit</span>
+              <span>Financial APIs</span>
+              <span>LLM (Groq)</span>
+              <span>Data Visualization</span>
+            </div>
+            <div class="project-highlights">
+              <div><i class="fa-solid fa-check"></i> Real-time stock ticker & technical indicator calculation</div>
+              <div><i class="fa-solid fa-check"></i> Groq LLM integration for risk evaluation & trend insights</div>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-sm btn-primary btn-inspect-project" data-project="market">
+                <i class="fa-solid fa-expand"></i> Inspect Details
+              </button>
+              <a href="https://github.com/dshalini2816" target="_blank" class="project-link" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Brain Tumor Segmentation -->
+        <div class="project-card" data-category="ml">
+          <div class="project-banner project-banner-2">
+            <div class="project-type-tag"><i class="fa-solid fa-brain"></i> Machine Learning</div>
+            <div class="project-accuracy-badge"><i class="fa-solid fa-certificate"></i> ~98.5% Accuracy</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Brain Tumor Segmentation (Attention U-Net)</h3>
+            <p class="project-desc">
+              Trained an Attention U-Net deep learning model on the BraTS 2020 MRI dataset to accurately segment tumor regions from multi-modal medical scans.
+            </p>
+            <div class="project-tech">
+              <span>TensorFlow</span>
+              <span>Keras</span>
+              <span>OpenCV</span>
+              <span>Nibabel</span>
+              <span>Scikit-learn</span>
+            </div>
+            <div class="project-highlights">
+              <div><i class="fa-solid fa-check"></i> Achieved ~98.5% test accuracy on complex MRI datasets</div>
+              <div><i class="fa-solid fa-check"></i> Evaluated pipeline via IoU, Dice Score, and F1 metrics</div>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-sm btn-primary btn-inspect-project" data-project="mri">
+                <i class="fa-solid fa-expand"></i> Inspect Details
+              </button>
+              <a href="https://github.com/dshalini2816" target="_blank" class="project-link" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: AI Code Analyzer -->
+        <div class="project-card" data-category="web">
+          <div class="project-banner project-banner-3">
+            <div class="project-type-tag"><i class="fa-solid fa-code"></i> AI & Web Systems</div>
+            <div class="project-icon-overlay"><i class="fa-solid fa-robot"></i></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">AI Code Analyzer & Review Tool</h3>
+            <p class="project-desc">
+              Full-stack AI-powered code review platform designed to analyze source code quality, calculate complexity metrics, and detect vulnerabilities using the Gemini API.
+            </p>
+            <div class="project-tech">
+              <span>Python (Flask)</span>
+              <span>Gemini API</span>
+              <span>JavaScript</span>
+              <span>REST APIs</span>
+              <span>HTML/CSS</span>
+            </div>
+            <div class="project-highlights">
+              <div><i class="fa-solid fa-check"></i> Automated multi-language static code review & metric generation</div>
+              <div><i class="fa-solid fa-check"></i> Built RESTful health monitoring & model selection endpoints</div>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-sm btn-primary btn-inspect-project" data-project="code">
+                <i class="fa-solid fa-expand"></i> Inspect Details
+              </button>
+              <a href="https://github.com/dshalini2816" target="_blank" class="project-link" title="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience & Volunteer Timeline -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-briefcase"></i> Track Record</span>
+        <h2 class="section-title">Experience & <span class="text-gradient">Leadership</span></h2>
+        <p class="section-description">
+          Hands-on analytical internships and leadership roles demonstrating data handling, teamwork, and execution.
+        </p>
+      </div>
+
+      <div class="timeline">
+        
+        <!-- Experience Item 1: NGO Data Analyst Intern -->
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Analyst Intern <span class="badge-role">Project-Based</span></h3>
+                <h4 class="timeline-company">NGO Collaboration</h4>
+              </div>
+              <div class="timeline-date"><i class="fa-regular fa-calendar"></i> Project Duration</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>
+                <i class="fa-solid fa-angle-right"></i> Cleaned, validated, and structured raw field survey data collected from volunteer networks using <strong>SQL queries</strong>, dramatically boosting data consistency and reliability.
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> Identified underlying trends and critical insights by performing multi-category demographic analysis across survey datasets.
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> Built dynamic <strong>Excel-based executive reports</strong> and visualizations (pivot tables, charts) to enable data-backed strategic decision-making.
+              </li>
+            </ul>
+            <div class="timeline-skills">
+              <span>SQL Data Cleaning</span>
+              <span>Excel Pivot Tables</span>
+              <span>Demographic Insights</span>
+              <span>Report Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 2: KIIT ISS Volunteer -->
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-users"></i></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Volunteer & Event Coordinator</h3>
+                <h4 class="timeline-company">KIIT International Student Society (ISS) &bull; Bhubaneswar, India</h4>
+              </div>
+              <div class="timeline-date"><i class="fa-regular fa-calendar"></i> 2023 &ndash; Present</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>
+                <i class="fa-solid fa-angle-right"></i> Coordinated with diverse international student cohorts to organize and execute cultural programs, fests, and campus integration events.
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> Communicated complex event workflows clearly, fostering an inclusive community and significantly driving student participation.
+              </li>
+              <li>
+                <i class="fa-solid fa-angle-right"></i> Developed strong interpersonal, client interaction, and crisis management skills in high-tempo, multi-cultural environments.
+              </li>
+            </ul>
+            <div class="timeline-skills">
+              <span>Event Coordination</span>
+              <span>Cross-Cultural Communication</span>
+              <span>Team Leadership</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education, Scholastic Awards & Certifications -->
+  <section class="section edu-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-graduation-cap"></i> Academic Foundation</span>
+        <h2 class="section-title">Education & <span class="text-gradient">Certifications</span></h2>
+      </div>
+
+      <div class="edu-grid">
+        <!-- Education Main Card -->
+        <div class="edu-card">
+          <div class="edu-badge"><i class="fa-solid fa-university"></i> KIIT University</div>
+          <h3>Bachelor of Technology (B.Tech)</h3>
+          <h4>Computer Science & Engineering</h4>
+          <div class="edu-meta">
+            <span><i class="fa-regular fa-calendar"></i> Oct 2022 &ndash; Present</span>
+            <span class="cgpa-pill"><i class="fa-solid fa-star"></i> CGPA: 7.54</span>
+          </div>
+          <p class="edu-coursework-title"><i class="fa-solid fa-book-open"></i> Relevant Coursework:</p>
+          <div class="coursework-pills">
+            <span>Database Management Systems (DBMS)</span>
+            <span>Data Analytics</span>
+            <span>Software Development Life Cycle (SDLC)</span>
+            <span>Computer Science Fundamentals</span>
+          </div>
+        </div>
+
+        <!-- Awards & Certifications Card -->
+        <div class="certs-card">
+          <h3><i class="fa-solid fa-trophy"></i> Awards & Certifications</h3>
+
+          <div class="cert-item highlight-cert">
+            <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="cert-details">
+              <h4>Study in India Scholarship</h4>
+              <p>Full-Tuition Award &bull; Top 5% selection out of 10,000+ international applicants</p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="cert-details">
+              <h4>Full Stack Web Development</h4>
+              <p>DevTown &bull; Issued Apr 2025</p>
+            </div>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="cert-details">
+              <h4>Cybersecurity Analyst Job Simulation</h4>
+              <p>TATA Forage &bull; Issued Jan 2025</p>
+            </div>
+          </div>
+
+          <!-- Extra Curricular -->
+          <div class="extra-curricular-box">
+            <h5><i class="fa-solid fa-seedling"></i> Social Initiatives & Activities</h5>
+            <p>Organized cultural fests for KIIT ISS and actively volunteered in social environmental plantation drives.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle"><i class="fa-solid fa-comments"></i> Get In Touch</span>
+        <h2 class="section-title">Let's Work <span class="text-gradient">Together</span></h2>
+        <p class="section-description">
+          Open to full-time Data Analyst, Analytics Engineer, and Data Science internship/entry roles. Feel free to connect!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Contacts -->
+        <div class="contact-info-cards">
+          
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="info-body">
+              <span class="info-label">Email Address</span>
+              <a href="mailto:dshalini2816@gmail.com" class="info-value">dshalini2816@gmail.com</a>
+            </div>
+            <button class="btn-copy-info" id="btn-copy-email" title="Copy Email">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="info-body">
+              <span class="info-label">Phone / WhatsApp</span>
+              <a href="tel:+917749968828" class="info-value">+91 7749968828</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-body">
+              <span class="info-label">Location</span>
+              <span class="info-value">Bhubaneswar, Odisha, India</span>
+              <span class="sub-value">Open to Relocation Worldwide</span>
+            </div>
+          </div>
+
+          <div class="social-links-grid">
+            <a href="https://linkedin.com" target="_blank" class="social-card">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com/dshalini2816" target="_blank" class="social-card">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-card">
+          <h3><i class="fa-paper-plane fa-solid"></i> Send a Direct Message</h3>
+          <form id="contact-form" action="https://formspree.io/f/xeajwoez" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" name="_subject" placeholder="Data Analyst Opportunity / Inquiry" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" name="message" rows="4" placeholder="Hello Shalini, I viewed your portfolio and would like to discuss..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="logo-accent">&lt;SD/&gt;</span> <strong>Shalini Das</strong> &bull; Data Analyst Portfolio
+      </div>
+      <div class="footer-center">
+        Designed for Data Analytics Excellence
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" title="Back to Top"><i class="fa-solid fa-arrow-up"></i> Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div id="modal-body">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Preview Modal -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-file-pdf"></i> Shalini Das - Resume</h3>
+        <div class="modal-header-actions">
+          <a href="resume.pdf" download="Shalini_Das_Resume.pdf" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-download"></i> Download PDF
+          </a>
+          <button class="modal-close" id="resume-close-btn">&times;</button>
+        </div>
+      </div>
+      <div class="resume-iframe-container">
+        <iframe src="resume.pdf#toolbar=0" title="Shalini Das Resume PDF"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
